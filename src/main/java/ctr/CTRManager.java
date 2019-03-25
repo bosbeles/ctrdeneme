@@ -160,7 +160,8 @@ public class CTRManager {
     }
 
     private void breakTie(String p) {
-        log.error("{} {}: BreakTie({}, {})", id, state, myP, p);
+        log.error("{} {}: BreakTie({}, {})", id, state,
+                myP, p);
         if (myP.compareTo(p) < 0) {
             tRef = p;
         } else {
